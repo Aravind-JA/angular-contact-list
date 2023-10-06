@@ -1,0 +1,58 @@
+table {
+    width: 100%;
+    border: 1px solid #434343;
+}
+
+thead {
+    font-size: 20px;
+}
+
+thead td {
+    padding: 10px;
+}
+
+td {
+    padding: 5px 10px;
+    text-align: left;
+    border-top: 1px solid #434343;
+    border-bottom: 1px solid #434343;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-confirm {
+    background-color: antiquewhite;
+    color: #000;
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 10;
+    width: 450px;
+}
+.delete-confirm h3{
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.delete-confirm p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.buttons{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+}

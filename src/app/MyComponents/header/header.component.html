@@ -1,0 +1,15 @@
+<div class="header">
+    <div class="container">
+        <header>
+            <button class="home" (click)="goHome()">Home</button>
+            <h2>Mini-Contact List ({{totalDataLength}})</h2>
+            <div class="search">
+                <div class="search-box">
+                    <button class="btn-search" (click)="search(searchQuery)"><mat-icon>search</mat-icon></button>
+                    <input type="text" class="input-search" placeholder="Type to Search..." [(ngModel)]="searchQuery"
+                        (keydown.enter)="search(searchQuery)">
+                </div>
+            </div>
+        </header>
+    </div>
+</div>

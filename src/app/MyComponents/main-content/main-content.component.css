@@ -1,0 +1,109 @@
+.background {
+    padding-top: 20px;
+    background: linear-gradient(to bottom, black 100%, #434343 0%);
+    color: white;
+    min-height: 90vh;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #434343;
+}
+
+thead {
+    font-size: 20px;
+}
+
+thead td {
+    padding: 10px;
+}
+
+td {
+    padding: 5px 10px;
+    text-align: center;
+    border-top: 1px solid #434343;
+    border-bottom: 1px solid #434343;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-contact-form {
+    background-color: #434343;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    z-index: 99;
+    padding: 2rem;
+}
+
+.add-contact-form input {
+    width: 500px;
+}
+
+.rows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.rows label {
+    flex: 1;
+    margin-top: 0.5rem;
+}
+
+.rows p {
+    font-size: 14px;
+    color: rgb(250, 84, 84);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 0.6rem;
+}
+
+.page-link {
+    background-color: #434343;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.error {
+    z-index: 10;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 200px;
+}
+.error h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+.mat-mdc-progress-spinner {
+    --mdc-circular-progress-active-indicator-color: #000;
+}

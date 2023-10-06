@@ -1,0 +1,45 @@
+
+.add-contact-form{
+    background-color: #434343;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    z-index: 99;
+    padding: 2rem;
+}
+.add-contact-form input{
+    width: 500px;
+}
+.rows{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+.rows label{
+    flex: 1;
+    margin-top: 0.5rem;
+}
+.rows p{
+    font-size: 14px;
+    color: rgb(250, 84, 84);
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 0.6rem;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}

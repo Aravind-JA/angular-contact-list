@@ -1,0 +1,26 @@
+<div class="background">
+    <div class="container" *ngIf="!onError">
+        <div class="buttons">
+            <button *ngIf="!showForm" (click)="ShowForm()" class="btn btn-primary">Add Contact</button>
+        </div>
+        <!-- Table -->
+        <app-table [data]="data.data" [currentPage]="currentPage"></app-table>
+
+        <!-- Form -->
+        <app-form *ngIf="showForm" [contactId]="contactId" [(showForm)]="showForm"></app-form>
+
+        <!-- Pagination -->
+        <ul class="pagination buttons" *ngIf="(data.length/10)>1">
+            <li *ngFor="let item of totalPages(data.length/10);let i=index" class="page-link"
+                [ngClass]="{'bg-primary': i+1 === currentPage}" (click)="setPage(i+1)">{{i+1}}</li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="overlay" *ngIf="onError">
+    <div class="error">
+        <h2>Something went wrong</h2>
+        <mat-spinner diameter="50" strokeWidth="10"></mat-spinner>
+    </div>
+</div>

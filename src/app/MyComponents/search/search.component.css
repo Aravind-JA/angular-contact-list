@@ -1,0 +1,24 @@
+.background {
+    padding-top: 20px;
+    background: linear-gradient(to bottom, black 100%, #434343 0%);
+    color: white;
+    min-height: 90vh;
+}
+table {
+    width: 100%;
+    border: 1px solid #434343;
+}
+
+thead {
+    font-size: 20px;
+}
+thead td{
+    padding: 10px ;
+}
+
+td {
+    padding: 5px 10px;
+    text-align: center;
+    border-top: 1px solid #434343;
+    border-bottom: 1px solid #434343;
+}

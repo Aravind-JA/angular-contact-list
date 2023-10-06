@@ -1,0 +1,29 @@
+<div class="background">
+   <div class="container">
+      <h2>Search results for : '{{query}}'</h2>
+      <app-table [data]="data"></app-table>
+      <!-- <table class="my-3">
+         <thead>
+             <td>Si.No.</td>
+             <td>First Name</td>
+             <td>Last Name</td>
+             <td>Phone Number</td>
+             <td>E-mail</td>
+             <td>Options</td>
+         </thead>
+         <tr *ngFor="let item of data;let i = index">
+             <td>{{i+1}}</td>
+             <td>{{item.firstName}}</td>
+             <td>{{item.lastName}}</td>
+             <td>{{item.phone}}</td>
+             <td>{{item.email}}</td>
+             <td>
+                 <mat-icon class="text-warning me-2" (click)="openEditContact(item._id)">edit</mat-icon>
+                 <mat-icon class="text-danger" (click)="deleteContact(item._id)">delete</mat-icon>
+                 <mat-icon class="text-warning me-2">edit</mat-icon>
+                 <mat-icon class="text-danger">delete</mat-icon>
+               </td>
+         </tr>
+     </table> -->
+   </div>
+</div>

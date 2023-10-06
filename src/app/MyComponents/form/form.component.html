@@ -1,0 +1,42 @@
+<div class="add-contact-form">
+    <h2>Add Contact</h2>
+    <form (submit)="onSubmit()">
+        <div class="rows">
+            <label for="firstName">First Name : </label>
+            <div>
+                <input type="text" class="form-control" id="firstName" name="firstName" [(ngModel)]="firstName"
+                    required>
+                <p *ngIf="firstNameError">Invalid First Name</p>
+            </div>
+        </div>
+        <div class="rows">
+            <label for="lastName">Last Name : </label>
+            <div>
+                <input type="text" name="lastName" class="form-control" id="lastName" [(ngModel)]="lastName"
+                    required>
+                <p *ngIf="lastNameError">Invalid Last Name</p>
+            </div>
+        </div>
+        <div class="rows">
+            <label for="phone">Phone : </label>
+            <div>
+                <input type="text" name="phone" class="form-control" id="phone" [(ngModel)]="phone" required>
+                <p *ngIf="phoneError">Invalid Phone Number</p>
+            </div>
+        </div>
+        <div class="rows">
+            <label for="email">E-mail : </label>
+            <div>
+                <input type="text" name="email" class="form-control" id="email" [(ngModel)]="email" required>
+                <p *ngIf="emailError">Invalid Email</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button type="button" (click)="closeForm()" class="btn btn-secondary">Cancel</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+
+<!-- Overlay -->
+<div class="overlay" *ngIf="showForm"></div>
